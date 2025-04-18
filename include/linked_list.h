@@ -21,6 +21,8 @@ typedef List_node(T)* List_iterator(T);   \
  *  @returns Iterator that points before the first element 
  *           in the %List.
  */\
+__attribute__((unused))                                     \
+static                                                      \
 List_iterator(T) List_before_begin ## T(List(T)* this) {    \
     return (List_iterator(T)) &this->List.begin;            \
 }                                                           \
@@ -30,6 +32,8 @@ List_iterator(T) List_before_begin ## T(List(T)* this) {    \
  *  @returns A read/write iterator that points to the first element 
  *           in the %List.
  */\
+__attribute__((unused))                              \
+static                                               \
 List_iterator(T) List_begin ## T(List(T)* this) {    \
     return (List_iterator(T)) this->List.begin;      \
 }                                                    \
@@ -39,6 +43,8 @@ List_iterator(T) List_begin ## T(List(T)* this) {    \
  *  @returns A read/write reverse iterator that points to the last 
  *           element in the %List.
  */\
+__attribute__((unused))                              \
+static                                               \
 List_iterator(T) List_rbegin ## T(List(T)* this) {   \
     return (List_iterator(T)) this->List.rbegin;     \
 }                                                    \
