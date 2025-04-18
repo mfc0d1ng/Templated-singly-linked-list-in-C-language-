@@ -6,5 +6,7 @@ This shared <a href="https://github.com/user-attachments/files/19812331/libTList
 You can link the library to your C project as follows:
 
 <pre>
+  
   gcc -ffunction-sections -Wl,--gc-sections example.c -l TList
+  
 </pre> 
