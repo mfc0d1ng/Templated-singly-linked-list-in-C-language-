@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include "linked_list_cfg.h"
 
-//gcc -Wall -c linked_list.c
-//gcc -shared -o libList.so linked_list.o
-
 int main()
 {
     List(char) chars = List_new();
