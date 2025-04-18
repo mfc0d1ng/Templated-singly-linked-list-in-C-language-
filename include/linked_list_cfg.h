@@ -31,9 +31,8 @@ class_List(point)
  */
 #define List_before_begin(this) ({ \
     _Generic((this), \
-        List(char) * : List_before_begin ## char, \
-        List(int) * : List_before_begin ## int \
-    )(this);\
+        List(char) * : List_before_begin ## char \
+    )(this); \
 })
 
 /** 
@@ -45,7 +44,7 @@ class_List(point)
         List(char) * : List_begin ## char, \
         List(int)  * : List_begin ## int, \
         List(point)  * : List_begin ## point \
-    )(this);\
+    )(this); \
 })
 
 /** 
@@ -56,7 +55,7 @@ class_List(point)
     _Generic((this), \
         List(int)  * : List_push_back ## int, \
         List(point)  * : List_push_back ## point \
-    )(this, __VA_ARGS__);\
+    )(this, __VA_ARGS__); \
 })
 
 /** 
