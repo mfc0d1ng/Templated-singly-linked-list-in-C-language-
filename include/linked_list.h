@@ -268,7 +268,7 @@ void List_sort ## T(List(T)* this, int (*__compare)(const void *, const void *))
 }                                                                                   \
 \
 /**
- * @brief Swap contents of two %Lists.
+ * @brief Swap contents of two %Lists of the same type.
  * @param __first Reference to the first %List.
  * @param __second Reference to the second %List.
  * 
