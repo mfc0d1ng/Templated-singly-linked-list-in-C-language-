@@ -85,7 +85,8 @@ T* List_data ## T (List_iterator(T) __it)    \
 }                                            \
 \
 /**
- * @brief Provides read/write reference to data.
+ * @brief Provides read/write reference to data in the element following 
+ *        the element pointed to by @a __it.
  * @param __it Iterator into the %List.
 */\
 __attribute__((unused))                            \
