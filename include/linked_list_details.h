@@ -44,7 +44,7 @@ extern _M_List_iterator _M_List_erase_after(_M_List* this, _M_List_iterator __po
 
 extern void _M_List_resize(_M_List* this, size_t __size, size_t __isize);
 
-extern void _M_List_splice_after(_M_List* this, _M_List_iterator __position, _M_List* ___M_List, _M_List_iterator __pos);
+extern void _M_List_splice_after(_M_List* this, _M_List_iterator __position, _M_List* __list, _M_List_iterator __pos);
 
 extern _M_List _M_List_move(_M_List* this);
 
